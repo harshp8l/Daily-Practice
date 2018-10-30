@@ -1,9 +1,11 @@
-# 30 14 * * * source ~/Desktop/code/commit-bot/bot.sh
+# 30 14 * * * source ... path to test.sh
 # this is at 2:30 pm
 # crontab -e
 
 
 #info = "$(date "+%m.%d.%y")"
+
+cd ~/Code/Daily-Practice/
 info="Updated on: $(date "+%m.%d.%y")"
 echo "$info" >> out.txt
 echo
